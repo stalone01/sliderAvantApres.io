@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.before-after-slider {
+    position: relative;
+    width: 60%; /* Réduire la largeur totale */
+    max-width: 480px; /* Limiter la largeur maximale */
+    margin: auto;
+    overflow: cover;
+}
+
+.before-after-wrapper {
+    position: relative;
+}
+
+.before-image, .after-image {
+    width: 100%;
+    height: 300px; /* Fixer la hauteur à 300px */
+    object-fit: cover; /* Maintenir le ratio de l'image */
+    display: block;
+}
+
+.after-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    clip: rect(0, 200px, auto, 0); /* Ajuster la largeur visible */
+}
+
+.divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #ffffff;
+    cursor: ew-resize;
+    left: 200px; /* Position initiale du curseur */
+}
